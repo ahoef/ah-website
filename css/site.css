@@ -274,8 +274,6 @@ footer a:hover
     border: 5px solid white;
   }
 
-
-
   .craft-projects li:nth-child(5n)
   {
     margin-right: 5%;
@@ -306,9 +304,5 @@ footer a:hover
   {
     width: 94.5%;
   }
- /* .craft-projects p
-  {
-    display: none;
-  }*/
 }
 
