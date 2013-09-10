@@ -55,8 +55,7 @@ h2
 {
   font-family: 'Montserrat', sans-serif;
   color: #888;
-  /*text-transform: uppercase;*/
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 50px;
 }
 
@@ -64,7 +63,7 @@ h3
 {
   font-family: 'Montserrat', sans-serif;
   color: #bf97a6;
-  font-size: 1.0em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -88,7 +87,6 @@ section:last-child
 .main-content
 {
   background-color: rgba(255, 255, 255, .5);
-  /*height: 1000px;*/
 }
 
 nav ul
@@ -125,8 +123,7 @@ nav ul li a
 
 .bio img
 {
-  /*float: left;*/
-  width: 27%%;
+  width: 27%;
   border: 8px solid white;
 }
 
@@ -169,6 +166,7 @@ nav ul li a
 .web-projects img:hover
 {
   opacity: .5;
+  filter: alpha(opacity=50);
 }
 
 .craft-projects li
@@ -216,9 +214,6 @@ footer a:hover
 {
   color: #888;
 }
-
-
-
 
 @media (max-width: 960px) {
   h1 {margin: 50px 40px;}
