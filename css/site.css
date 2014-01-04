@@ -96,8 +96,6 @@ nav ul
   font-size: 1.2em;
   font-family: 'Rosario', sans-serif;
   font-style: italic;
-/*  display: block;
-  width: 100%;*/
 }
 
 nav ul li
@@ -109,7 +107,7 @@ nav ul li
 nav ul li a
 {
   margin: 0;
-  padding: 30px 15px 25px 15px;
+  padding: 35px 15px 30px 15px;
   display: block;
 }
 
@@ -117,16 +115,6 @@ nav ul #github
 {
   padding-left: 30px;
 }
-
-/*nav ul #etsy img
-{
-  width: 25%;
-}*/
-
-/*nav ul #email img
-{
-  padding-bottom: 5px;
-}*/
 
 .bio p
 {
@@ -160,9 +148,21 @@ nav ul #github
   padding: 15px;
 }
 
-.projects .column .project-info h3
+.projects .column h3
 {
   text-align: center;
+/*  background-color: #DBDBDB;
+  color: #888;*/
+  background-color: #ABA9A9;
+  color: #fff;
+  padding: 20px 5px 16px 5px;
+  margin-top: -2px;
+  margin-bottom: 0px;
+}
+
+.projects .column .urban
+{
+  padding: 30px 5px 26px 5px;
 }
 
 .projects .column .project-info p
@@ -177,10 +177,10 @@ nav ul #github
 
 .projects img
 {
-  float: left;
+  /*float: left;*/
   border: 8px solid white;
   width: 93%;
-  margin-bottom: 10px;
+  /*margin-bottom: 20px;*/
 }
 
 .projects img:hover
@@ -262,6 +262,10 @@ footer a:hover
   {
     width: 55%;
     margin-left: 20%;
+  }
+  .bio .last
+  {
+    margin-bottom: 12px;
   }
 
   .projects .column
