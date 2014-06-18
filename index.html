@@ -28,75 +28,131 @@
   </head>
 
   <body>
-    <header>
-      <h2>HEY!</h2>
-      <h1>I'm Alexandra Hoefinger,</h1>
-      <h3><a href="http://www.urbanoutfitters.com" target="blank">a front-end web developer at Urban Outfitters</a></h3>
-      <h3><a href="http://www.meetup.com/Girl-Develop-It-Philadelphia/" target="blank">a GDI Philly student, TA, + instructor</h3>
-      <h3><a href="http://philodendrondesigns.etsy.com" target="blank">a small business owner</h3>
-      <h3><a href="http://www.philodendron.co/blog" target="blank">a diy craft blogger</h3>
-    </header>
+    <div class="container">
+      <div class="content">
+        <header>
+          <div class="col5">
+            <h2>HEY!</h2>
+          </div>
 
-    <section>
-      <span class="amp">&</span><p>here are some of my recent projects on the web<p>
+          <div class="col7 meta">
+            <h1>I'm Alexandra Hoefinger &mdash;</h1>
+            <ul>
+              <li><a href="http://www.urbanoutfitters.com" target="blank">a front-end web developer at Urban Outfitters,</a></li>
+              <li><a href="http://www.meetup.com/Girl-Develop-It-Philadelphia/" target="blank">a GDI Philly student, TA, + instructor,</a></li>
+              <li><a href="http://philodendrondesigns.etsy.com" target="blank">a small business owner,</a></li>
+              <li><a href="http://www.philodendron.co/blog" target="blank">a diy craft blogger,</a></li>
+            </ul>
+          </div>
+        </header>
 
-      <a href="http://www.alexandrahoefinger.com/origins-of-color/index.html" title="JavaScript Calculator" target="_blank"><img src="images/origins-of-color.jpg">
-        <h3>The Origins of Color &mdash; a responsive parallax site about color history</h3>
-      </a>
-      <a href="http://www.rygo-ipsum.com" title="Rygo Ipsum" target="_blank"><img src="images/rygo-ipsum.png">
-        <h3>Rygo Ipsum &mdash; a Ryan Gosling lorem ipsum text generator</h3>
-      </a>
+        <section class="col12 section1">
+          <div class="section-head"><span class="amp">&</span><h1>here are some of my recent<br> projects on the web:<h1></div>
 
-      <a href="http://www.alexandrahoefinger.com/js-calculator/index.html" title="JavaScript Calculator" target="_blank"><img src="images/calculatorV2.png">
-        <h3>A basic calculator I designed and built with JavaScript</h3>
-      </a>
-    </section>
-
-    <section>
-      <span class="amp">&</span><p>here are some other sites I've worked on<p>
-
-      <a href="http://www.philodendron.co" title="Philodendron" target="_blank"><img src="images/philodendron.jpg">
-        <h3>Philodendron &mdash; The project gallery and blog for my small business</h3>
-      </a>
-      <a href="http://www.urbanoutfitters.com" title="Urban Outfitters" target="_blank"><img src="images/UO.jpg">
-        <h3>Urban Outfitters &mdash; I've developed the last three homepage redesigns and code weekly marketing updates throughout the site</h3>
-      </a>
-
-      <a href="http://www.ihousephilly.org" title="International House Philadelphia" target="_blank"><img src="images/ihouse.png">
-        <h3>IHouse Philly &mdash; A responsive node.js site that I built with Apostrophe while an apprentice at P'unk Ave</h3>
-      </a>
-    </section>
-
-    <section class="craft-projects clearfix">
-      <span class="amp">&</span><p>here are some of the other things I've made recently<p>
-
-      <ul>
-          <li><a class="fancybox" rel="group" href="images/pouches.jpg"><img src="images/pouches.jpg" alt="Leather Pouches"></a></li>
-          <li><a class="fancybox" rel="group" href="images/sidetable.jpg"><img src="images/sidetable.jpg" alt="Side Table"></a></li>
-          <li><a class="fancybox" rel="group" href="images/jewelry.jpg"><img src="images/jewelry.jpg" alt="Jewelry"></a></li>
-          <li><a class="fancybox" rel="group" href="images/paper-flowers.jpg"><img src="images/paper-flowers.jpg" alt="Paper Flowers"></a></li>
-          <li><a class="fancybox" rel="group" href="images/scarf.jpg"><img src="images/scarf.jpg" alt="Knit Wool Scarf"></a></li>
-      </ul>
-    </section>
-
-        <section class="">
-      <span class="amp">&</span><p>here are some hackathon projects i've contributed to<p>
-
-            <a href="http://www.vegphilly.com" title="VegPhilly" target="_blank"><img src="images/logo.png">
-              <h3>VegPhilly &mdash; a local vegetarian dining guide, built with django and python</h3>
+          <div class="col4">
+            <div class="block">
+            <a href="http://www.alexandrahoefinger.com/origins-of-color/index.html" title="The Origins of Color" target="_blank"><img src="images/origins-of-color.jpg">
+              <div class="overlay">
+                <h3>The Origins of Color &mdash; a responsive parallax site about color history</h3>
+              </div>
             </a>
-
-            <a href="http://www.shetechphilly.com" title="SheTechPhilly" target="_blank"><img src="images/stp.jpg">
-              <h3>SheTechPhilly &mdash; a community-based wordpress site featuring local tech events and resources for women in technology</h3>
+          </div>
+          </div>
+          <div class="col4">
+            <div class="block">
+            <a href="http://www.rygo-ipsum.com" title="Rygo Ipsum" target="_blank"><img src="images/rygo-ipsum.png">
+              <div class="overlay">
+                <h3>Rygo Ipsum &mdash; a Ryan Gosling lorem ipsum text generator</h3>
+              </div>
             </a>
-    </section>
+          </div>
+          </div>
 
-    <section class="">
-      <span class="amp">&</span><p>here's my presentation on parallax scrolling from the 2014 Women in Tech Summit<p>
-      <a href="http://slides.com/ahoefinger/wits#/" title="2014 Women in Tech Summit Presentation" target="_blank"><img src="images/wits.png">
-      </a>
+          <div class="col4">
+            <a href="http://www.alexandrahoefinger.com/js-calculator/index.html" title="JavaScript Calculator" target="_blank"><img src="images/calculatorV2.png">
+              <div class="overlay">
+                <h3>A basic calculator I designed and built with JavaScript</h3>
+              </div>
+            </a>
+          </div>
+        </section>
 
-    </section>
+        <section class="col12 section2">
+          <div class="section-head"><span class="amp">&</span><h1>here are some other <br>sites I've worked on:</h1></div>
+
+          <div class="col4">
+            <a href="http://www.philodendron.co" title="Philodendron" target="_blank"><img src="images/philodendron.jpg">
+              <div class="overlay">
+                <h3>Philodendron &mdash; The project gallery and blog for my small business</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col4">
+            <a href="http://www.urbanoutfitters.com" title="Urban Outfitters" target="_blank"><img src="images/UO.jpg">
+              <div class="overlay">
+                <h3>Urban Outfitters &mdash; I've developed the last three homepage redesigns and code weekly marketing updates throughout the site</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="col4">
+            <a href="http://www.ihousephilly.org" title="International House Philadelphia" target="_blank"><img src="images/ihouse.png">
+              <div class="overlay">
+                <h3>IHouse Philly &mdash; A responsive node.js site that I built with Apostrophe while an apprentice at P'unk Ave</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="craft-projects clearfix col12">
+           <div class="section-head"><span class="amp">&</span><h1>here are some of the other things I've made recently:</h1></div>
+
+          <ul>
+              <li><a class="fancybox" rel="group" href="images/pouches.jpg"><img src="images/pouches.jpg" alt="Leather Pouches"></a></li>
+              <li><a class="fancybox" rel="group" href="images/sidetable.jpg"><img src="images/sidetable.jpg" alt="Side Table"></a></li>
+              <li><a class="fancybox" rel="group" href="images/jewelry.jpg"><img src="images/jewelry.jpg" alt="Jewelry"></a></li>
+              <li><a class="fancybox" rel="group" href="images/paper-flowers.jpg"><img src="images/paper-flowers.jpg" alt="Paper Flowers"></a></li>
+              <li><a class="fancybox" rel="group" href="images/scarf.jpg"><img src="images/scarf.jpg" alt="Knit Wool Scarf"></a></li>
+          </ul>
+        </section>
+
+            <section class="col12 section4">
+              <div class="col8">
+                 <div class="section-head"><span class="amp">&</span><h1>here are some hackathon projects I've contributed to:</h1></div>
+
+                <div class="col4">
+                  <a href="http://www.vegphilly.com" title="VegPhilly" target="_blank"><img src="images/logo.png">
+                    <div class="overlay">
+                      <h3>VegPhilly &mdash; a local vegetarian dining guide, built with django and python</h3>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col4">
+                  <a href="http://www.shetechphilly.com" title="SheTechPhilly" target="_blank"><img src="images/stp.jpg">
+                    <div class="overlay">
+                      <h3>SheTechPhilly &mdash; a community-based wordpress site featuring local tech events and resources for women in technology</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col4 wits">
+                <div class="section-head"><span class="amp">&</span><h1>here's my presentation from the 2014 Women in Tech Summit:</h1></div>
+                <a href="http://slides.com/ahoefinger/wits#/" title="2014 Women in Tech Summit Presentation" target="_blank"><img src="images/wits.png">
+                </a>
+              </div>
+        </section>
+        <section class="col12 section5">
+          <h1>Get in touch!</h1>
+          <ul>
+            <li><img src="images/icons/twitter.png"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
         <script type="text/javascript">
       $(document).ready(function() {
