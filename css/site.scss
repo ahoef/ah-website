@@ -117,7 +117,7 @@ section {
   }
   .section-head {
     position: relative;
-    margin-left: -1%;
+    margin-left: 1%;
     margin-bottom: 25px;
   }
   .overlay {
@@ -170,6 +170,9 @@ section {
   padding-left: 8%;
   padding-right: 1%;
   padding-top: 100px;
+  ul {
+      margin-left: 1%;
+  }
   li {
     width: 19.2%;
     float: left;
@@ -201,7 +204,7 @@ section {
 
 footer {
   padding-top:70px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-align: center;
   h3 {
     font-size: 22px;
@@ -285,9 +288,6 @@ footer {
 
   }
   section {
-    .section-head {
-      margin-left: 1%;
-    }
     .overlay {
       position: relative;
       background-color: transparent;
@@ -305,9 +305,6 @@ footer {
     padding-top: 18px;
   }
   .craft-projects {
-    ul {
-      margin-left: 1%;
-    }
     margin-bottom: 0;
   }
   .section4 {

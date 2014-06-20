@@ -135,7 +135,7 @@ body {
 
 /* General small screen Mobile
   ============================================================================================== */
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 640px) {
   body {
     font-size: 1.0em;
     -webkit-text-size-adjust: none;
@@ -286,10 +286,13 @@ header h2 {
   font-size: 250px;
   padding-left: 12%;
   line-height: 1; }
+header .hey {
+  display: inline-block; }
 header .meta {
   text-align: right;
-  padding-right: 12%;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  display: inline-block;
+  padding-left: 12%; }
 header ul li {
   font-size: 20px;
   line-height: 40px; }
@@ -297,6 +300,12 @@ header ul li {
 section {
   padding: 50px 50px;
   margin-bottom: 30px; }
+  section .amp {
+    font-size: 200px;
+    position: absolute;
+    top: -84px;
+    left: -141px;
+    opacity: .3; }
   section h1 {
     font-size: 22px;
     margin-top: 0;
@@ -304,7 +313,7 @@ section {
     color: white; }
   section .section-head {
     position: relative;
-    margin-left: -1%;
+    margin-left: 1%;
     margin-bottom: 25px; }
   section .overlay {
     position: absolute;
@@ -343,38 +352,113 @@ section {
   padding-left: 8%;
   padding-right: 1%;
   padding-top: 100px; }
+  .craft-projects ul {
+    margin-left: 1%; }
   .craft-projects li {
-    width: 18.35%;
+    width: 19.2%;
     float: left;
-    margin-right: 2%;
+    margin-right: 1%;
     margin-bottom: 40px; }
     .craft-projects li:nth-child(5n) {
       margin-right: 0; }
 
 .section4 {
-  padding-top: 100px;
-  padding-right: 0;
   margin-bottom: 0;
-  padding-bottom: 40px; }
-  .section4 .col8 .col4 {
-    width: 34%; }
+  padding: 45px 0 40px 12%; }
+  .section4 .col8 {
+    padding-top: 240px; }
+    .section4 .col8 .col4 {
+      width: 37%; }
   .section4 .wits img {
     max-width: 85%;
     margin-left: 3%; }
   .section4 .spacer {
     height: 44%; }
 
-.section5 {
-  padding-top: 0;
-  padding-left: 13%;
-  margin-bottom: 0; }
-  .section5 ul li {
-    display: inline-block;
-    margin-right: 20px; }
+footer {
+  padding-top: 70px;
+  margin-bottom: 0px;
+  text-align: center; }
+  footer h3 {
+    font-size: 22px; }
+  footer ul {
+    margin: 0 auto; }
+    footer ul li {
+      display: inline-block;
+      margin-right: 20px; }
 
-.amp {
-  font-size: 200px;
-  position: absolute;
-  top: -84px;
-  left: -141px;
-  opacity: .3; }
+@media (max-width: 1280px) {
+  header h2 {
+    padding-left: 0; }
+  header .meta {
+    padding-right: 0; } }
+@media (max-width: 1220px) {
+  header .meta {
+    width: 100%;
+    text-align: left; }
+  header ul li:nth-child(1) {
+    margin-left: 7%; }
+  header ul li:nth-child(2) {
+    margin-left: 21%; }
+  header ul li:nth-child(3) {
+    margin-left: 39%; }
+  header ul li:nth-child(4) {
+    margin-left: 48%; } }
+@media (max-width: 1165px) {
+  .section2 .spacer {
+    height: 46%; }
+
+  .section4 .spacer {
+    height: 35%; } }
+@media (max-width: 1120px) {
+  body {
+    padding: 50px; }
+
+  header h2 {
+    margin-bottom: 24px;
+    margin-left: 6%; }
+  header .hey {
+    display: block; }
+  header .col5 {
+    float: none; }
+  header .meta {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 7%;
+    padding-left: 0;
+    width: auto; }
+    header .meta ul li {
+      margin: 0; }
+
+  section .overlay {
+    position: relative;
+    background-color: transparent;
+    padding: 5%;
+    text-align: center;
+    opacity: 1; }
+    section .overlay .m-dash, section .overlay h4 {
+      display: none; }
+
+  .section1, .section2, .craft-projects, .section4 {
+    padding-right: 0;
+    padding-left: 6%;
+    padding-top: 18px; }
+
+  .craft-projects {
+    margin-bottom: 0; }
+
+  .section4 .col8 {
+    float: none; }
+  .section4 .col8 .col4 {
+    width: 31%; }
+  .section4 .wits {
+    display: block;
+    width: 100%;
+    margin-top: 70px; }
+    .section4 .wits img {
+      width: 31%;
+      margin-left: 1%; }
+
+  footer {
+    text-align: left;
+    padding-left: 8%; } }
