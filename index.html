@@ -8,10 +8,10 @@
     <meta name="description" content="" />
 
     <script type="text/javascript" src="js/fancybox/lib/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
     <link rel="icon" type="image/png" href="http://i.imgur.com/bsI3IOt.png">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Oswald:400,300' rel='stylesheet' type='text/css'>
@@ -30,7 +30,7 @@
   <body>
     <div class="container">
       <div class="content">
-        <header>
+        <header class="col12">
           <div class="col5">
             <h2>HEY!</h2>
           </div>
@@ -47,65 +47,101 @@
         </header>
 
         <section class="col12 section1">
-          <div class="section-head"><span class="amp">&</span><h1>here are some of my recent<br> projects on the web:<h1></div>
-
-          <div class="col4">
-            <div class="block">
-            <a href="http://www.alexandrahoefinger.com/origins-of-color/index.html" title="The Origins of Color" target="_blank"><img src="images/origins-of-color.jpg">
-              <div class="overlay">
-                <h3>The Origins of Color &mdash; a responsive parallax site about color history</h3>
-              </div>
-            </a>
-          </div>
-          </div>
-          <div class="col4">
-            <div class="block">
-            <a href="http://www.rygo-ipsum.com" title="Rygo Ipsum" target="_blank"><img src="images/rygo-ipsum.png">
-              <div class="overlay">
-                <h3>Rygo Ipsum &mdash; a Ryan Gosling lorem ipsum text generator</h3>
-              </div>
-            </a>
-          </div>
+          <div class="section-head">
+            <span class="amp">&</span>
+            <h1>here are some of my recent<br> projects on the web:<h1>
           </div>
 
           <div class="col4">
-            <a href="http://www.alexandrahoefinger.com/js-calculator/index.html" title="JavaScript Calculator" target="_blank"><img src="images/calculatorV2.png">
-              <div class="overlay">
-                <h3>A basic calculator I designed and built with JavaScript</h3>
-              </div>
-            </a>
+            <div class="block">
+              <a href="http://www.alexandrahoefinger.com/origins-of-color/index.html" title="The Origins of Color" target="_blank">
+                <img src="images/origins-of-color.jpg">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>The Origins of Color &mdash;</h3>
+                  <h4>a responsive parallax site about color history</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col4">
+            <div class="block">
+              <a href="http://www.rygo-ipsum.com" title="Rygo Ipsum" target="_blank">
+                <img src="images/rygo-ipsum.png">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>Rygo Ipsum &mdash;</h3>
+                  <h4>a Ryan Gosling lorem ipsum text generator, built with Underscore.js</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col4">
+            <div class="block">
+              <a href="http://www.alexandrahoefinger.com/js-calculator/index.html" title="JavaScript Calculator" target="_blank">
+                <img src="images/calculatorV2.png">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>Calculator &mdash; </h3>
+                  <h4>a basic math calculator built with jQuery and JavaScript</h4>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
 
         <section class="col12 section2">
-          <div class="section-head"><span class="amp">&</span><h1>here are some other <br>sites I've worked on:</h1></div>
-
-          <div class="col4">
-            <a href="http://www.philodendron.co" title="Philodendron" target="_blank"><img src="images/philodendron.jpg">
-              <div class="overlay">
-                <h3>Philodendron &mdash; The project gallery and blog for my small business</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col4">
-            <a href="http://www.urbanoutfitters.com" title="Urban Outfitters" target="_blank"><img src="images/UO.jpg">
-              <div class="overlay">
-                <h3>Urban Outfitters &mdash; I've developed the last three homepage redesigns and code weekly marketing updates throughout the site</h3>
-              </div>
-            </a>
+          <div class="section-head">
+            <span class="amp">&</span>
+            <h1>here are some other <br>sites I've worked on:</h1>
           </div>
 
           <div class="col4">
-            <a href="http://www.ihousephilly.org" title="International House Philadelphia" target="_blank"><img src="images/ihouse.png">
-              <div class="overlay">
-                <h3>IHouse Philly &mdash; A responsive node.js site that I built with Apostrophe while an apprentice at P'unk Ave</h3>
-              </div>
-            </a>
+            <div class="block">
+              <a href="http://www.philodendron.co" title="Philodendron" target="_blank">
+                <img src="images/philodendron.jpg">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>Philodendron &mdash; </h3>
+                  <h4>The project gallery and blog for my small business, made with a custom WordPress theme</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col4">
+            <div class="block">
+              <a href="http://www.urbanoutfitters.com" title="Urban Outfitters" target="_blank">
+                <img src="images/UO.jpg">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>Urban Outfitters &mdash; </h3>
+                  <h4>I've developed the last three homepage redesigns and code weekly marketing updates throughout the site</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col4">
+            <div class="block">
+              <a href="http://www.ihousephilly.org" title="International House Philadelphia" target="_blank">
+                <img src="images/ihouse.png">
+                <div class="overlay">
+                  <div class="spacer"></div>
+                  <h3>IHouse Philly &mdash; </h3>
+                  <h4>A responsive node.js site that I built with Apostrophe while an apprentice at P'unk Ave</h4>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
 
         <section class="craft-projects clearfix col12">
-           <div class="section-head"><span class="amp">&</span><h1>here are some of the other things I've made recently:</h1></div>
+           <div class="section-head">
+            <span class="amp">&</span>
+            <h1>here are some of the other things I've made recently:</h1>
+          </div>
 
           <ul>
               <li><a class="fancybox" rel="group" href="images/pouches.jpg"><img src="images/pouches.jpg" alt="Leather Pouches"></a></li>
@@ -116,46 +152,64 @@
           </ul>
         </section>
 
-            <section class="col12 section4">
-              <div class="col8">
-                 <div class="section-head"><span class="amp">&</span><h1>here are some hackathon projects I've contributed to:</h1></div>
+        <section class="col12 section4">
+          <div class="col8">
+             <div class="section-head">
+              <span class="amp">&</span>
+              <h1>here are some hackathon projects I've contributed to:</h1>
+            </div>
 
-                <div class="col4">
-                  <a href="http://www.vegphilly.com" title="VegPhilly" target="_blank"><img src="images/logo.png">
-                    <div class="overlay">
-                      <h3>VegPhilly &mdash; a local vegetarian dining guide, built with django and python</h3>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col4">
-                  <a href="http://www.shetechphilly.com" title="SheTechPhilly" target="_blank"><img src="images/stp.jpg">
-                    <div class="overlay">
-                      <h3>SheTechPhilly &mdash; a community-based wordpress site featuring local tech events and resources for women in technology</h3>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col4 wits">
-                <div class="section-head"><span class="amp">&</span><h1>here's my presentation from the 2014 Women in Tech Summit:</h1></div>
-                <a href="http://slides.com/ahoefinger/wits#/" title="2014 Women in Tech Summit Presentation" target="_blank"><img src="images/wits.png">
+            <div class="col4">
+              <div class="block">
+                <a href="http://www.vegphilly.com" title="VegPhilly" target="_blank">
+                  <img src="images/logo.png">
+                  <div class="overlay">
+                    <div class="spacer"></div>
+                    <h3>VegPhilly &mdash; </h3>
+                    <h4>a local vegetarian dining guide with user accounts, built with Django, Python, and JavaScript</h4>
+                  </div>
                 </a>
               </div>
+            </div>
+
+            <div class="col4">
+              <div class="block">
+                <a href="http://www.shetechphilly.com" title="SheTechPhilly" target="_blank">
+                  <img src="images/stp.jpg">
+                  <div class="overlay">
+                    <div class="spacer"></div>
+                    <h3>SheTechPhilly &mdash; </h3>
+                    <h4>a WordPress site featuring local tech events and resources for women in technology</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col4 wits">
+            <div class="section-head">
+              <span class="amp">&</span>
+              <h1>here's my presentation from the 2014 Women in Tech Summit:</h1>
+            </div>
+            <a href="http://slides.com/ahoefinger/wits#/" title="2014 Women in Tech Summit Presentation" target="_blank">
+              <img src="images/wits.png">
+            </a>
+          </div>
         </section>
+
         <section class="col12 section5">
-          <h1>Get in touch!</h1>
           <ul>
-            <li><img src="images/icons/twitter.png"></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><h1>Get in touch!</h1></li>
+            <li><a href="http://www.github.com/ahoefinger"><i class="fa fa-github fa-3x"></i></a></li>
+            <li><a href="http://www.twitter.com/ahoefinger"><i class="fa fa-twitter fa-3x"></i></a></li>
+            <li><a href="mailto:alexandra.hoefinger@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a></li>
           </ul>
         </section>
+
       </div>
     </div>
 
-        <script type="text/javascript">
-      $(document).ready(function() {
+    <script type="text/javascript">
         $(".fancybox").fancybox({
         beforeShow : function() {
             var alt = this.element.find('img').attr('alt');
@@ -165,8 +219,6 @@
                 this.title = alt;
             }
         });
-      });
-
     </script>
 
   </body>
