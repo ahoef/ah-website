@@ -278,24 +278,28 @@ h3 {
   line-height: 1.2em;
   margin-bottom: 10px; }
 
-header a:hover {
-  color: #bf97a6; }
-header h1 {
-  margin-top: 10px; }
-header h2 {
-  font-size: 250px;
-  padding-left: 12%;
-  line-height: 1; }
-header .hey {
-  display: inline-block; }
-header .meta {
-  text-align: right;
-  margin-bottom: 100px;
-  display: inline-block;
-  padding-left: 12%; }
-header ul li {
-  font-size: 20px;
-  line-height: 40px; }
+header {
+  text-align: center;
+  margin-bottom: 15px; }
+  header a:hover {
+    color: #bf97a6; }
+  header h1 {
+    margin-top: 10px;
+    line-height: 1.8em;
+    margin-bottom: 0; }
+  header h2 {
+    font-size: 250px;
+    line-height: 1; }
+  header .hey {
+    display: inline-block; }
+  header .meta {
+    text-align: left;
+    margin-bottom: 100px;
+    display: inline-block;
+    padding-left: 3%; }
+  header ul li {
+    font-size: 24px;
+    line-height: 45px; }
 
 section {
   padding: 50px 50px;
@@ -336,21 +340,22 @@ section {
     border: 5px solid white; }
 
 .section1 {
-  padding-right: 12%;
-  padding-left: 8%; }
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-right: 0; }
   .section1 .spacer {
     height: 56%; }
 
 .section2 {
-  padding-left: 22%;
-  padding-right: 0;
+  padding-left: 3%;
+  padding-right: 3%;
   padding-top: 100px; }
   .section2 .spacer {
     height: 52%; }
 
 .craft-projects {
-  padding-left: 8%;
-  padding-right: 1%;
+  padding-left: 3%;
+  padding-right: 4%;
   padding-top: 100px; }
   .craft-projects ul {
     margin-left: 1%; }
@@ -364,13 +369,14 @@ section {
 
 .section4 {
   margin-bottom: 0;
-  padding: 45px 0 40px 12%; }
-  .section4 .col8 {
-    padding-top: 240px; }
-    .section4 .col8 .col4 {
-      width: 37%; }
+  padding: 45px 0 40px 2%; }
+  .section4 h1 {
+    max-width: 310px; }
+  .section4 .col8 .col4 {
+    width: 37%;
+    padding-right: 1%; }
   .section4 .wits img {
-    max-width: 85%;
+    max-width: 75%;
     margin-left: 3%; }
   .section4 .spacer {
     height: 44%; }
@@ -392,18 +398,6 @@ footer {
     padding-left: 0; }
   header .meta {
     padding-right: 0; } }
-@media (max-width: 1220px) {
-  header .meta {
-    width: 100%;
-    text-align: left; }
-  header ul li:nth-child(1) {
-    margin-left: 7%; }
-  header ul li:nth-child(2) {
-    margin-left: 21%; }
-  header ul li:nth-child(3) {
-    margin-left: 39%; }
-  header ul li:nth-child(4) {
-    margin-left: 48%; } }
 @media (max-width: 1165px) {
   .section2 .spacer {
     height: 46%; }
@@ -414,21 +408,24 @@ footer {
   body {
     padding: 50px; }
 
-  header h2 {
-    margin-bottom: 24px;
-    margin-left: 6%; }
-  header .hey {
-    display: block; }
-  header .col5 {
-    float: none; }
-  header .meta {
+  header {
     text-align: left;
-    margin-bottom: 40px;
-    margin-left: 7%;
-    padding-left: 0;
-    width: auto; }
-    header .meta ul li {
-      margin: 0; }
+    margin-bottom: 30px; }
+    header h2 {
+      margin-bottom: 24px;
+      margin-left: 6%; }
+    header .hey {
+      display: block; }
+    header .col5 {
+      float: none; }
+    header .meta {
+      text-align: left;
+      margin-bottom: 40px;
+      margin-left: 7%;
+      padding-left: 0;
+      width: auto; }
+      header .meta ul li {
+        margin: 0; }
 
   section .overlay {
     position: relative;
@@ -462,3 +459,93 @@ footer {
   footer {
     text-align: left;
     padding-left: 8%; } }
+@media (max-width: 640px) {
+  body {
+    padding: 8px; }
+
+  h3 {
+    font-size: 16px; }
+
+  header {
+    margin-bottom: 50px; }
+    header h1 {
+      font-size: 22px; }
+    header h2 {
+      font-size: 100px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    header ul li {
+      font-size: 16px;
+      line-height: 25px; }
+      header ul li:first-child span {
+        display: none; }
+    header meta, header h2 {
+      margin-left: 5%; }
+
+  .section1, .section2, .craft-projects, .section4 {
+    padding-left: 2%;
+    padding-bottom: 0; }
+
+  section h1 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: white;
+    margin-left: 29px;
+    max-width: 212px; }
+
+  section .amp {
+    font-size: 150px;
+    position: absolute;
+    top: -88px;
+    left: -70px; }
+
+  section .section-head {
+    margin-left: 14%; }
+
+  .block {
+    text-align: center; }
+
+  .section1 .col4, .section2 .col4, .section4 .col4 {
+    margin-bottom: 30px; }
+
+  .craft-projects li {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    float: none; }
+
+  .craft-projects li:nth-child(5n) {
+    margin-right: auto; }
+
+  .section4 {
+    margin-top: 50px; }
+
+  .section4 .col4 {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    text-align: center; }
+
+  .section4 .wits {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
+
+  .section4 .wits img {
+    width: 100%; }
+
+  .wits .section-head {
+    text-align: left; }
+
+  footer h3 {
+    font-size: 18px; }
+
+  footer ul {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 20px; }
+    footer ul li {
+      margin-right: 10px; } }
