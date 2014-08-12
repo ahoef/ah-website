@@ -1,4 +1,4 @@
 ah-website
 ==========
 
-(http://www.ahoef.co)
+www.ahoef.co
