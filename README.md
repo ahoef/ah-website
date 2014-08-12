@@ -1,6 +1,4 @@
 ah-website
 ==========
 
-personal website
-
-ahoef.co
+(ahoef.co)
