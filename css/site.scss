@@ -21,6 +21,7 @@ body {
   background: linear-gradient(to bottom, #cedce7 0%,#bf97a6 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#bf97a6',GradientType=0 ); /* IE6-9 */
   padding: 100px;
+  letter-spacing: .01em;
 }
 
 a {
@@ -50,9 +51,14 @@ h3
 {
   font-size: 1.2em;
   line-height: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 14px;
 }
 
+h4 {
+  line-height: 1.5em;
+}
 header {
   text-align: center;
   margin-bottom: 15px;
@@ -125,21 +131,28 @@ section {
   }
   .overlay {
     position: absolute;
+    background-color: black;
     background-color: rgba(122, 122, 122, 0.9);
     height: 100%;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 15%;
     -webkit-backface-visibility: hidden;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
     opacity: 0;
+    .text {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
   }
-  .spacer {
-    float: left;
-    width: 100%;
-    margin-bottom: -50px;
-  }
+
   .block {
     &:hover {
       .overlay {
@@ -149,6 +162,12 @@ section {
   }
   img {
     border: 5px solid white;
+  }
+  .col4 {
+    width: 29.333%;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 
@@ -215,6 +234,7 @@ footer {
   text-align: center;
   h3 {
     font-size: 22px;
+    border-bottom: none;
   }
   ul {
     margin: 0 auto;
@@ -258,14 +278,14 @@ footer {
 //   }
 // }
 
-@media (max-width: 1165px) {
-  .section2 .spacer {
-    height: 46%;
-  }
-  .section4 .spacer {
-    height: 35%;
-  }
-}
+// @media (max-width: 1165px) {
+//   .section2 .spacer {
+//     height: 46%;
+//   }
+//   .section4 .spacer {
+//     height: 35%;
+//   }
+// }
 
 @media (max-width: 1120px) {
   body {
@@ -274,9 +294,13 @@ footer {
   header {
     text-align: left;
     margin-bottom: 30px;
+    h1 {
+      font-size: 2em;
+    }
     h2 {
-      margin-bottom: 24px;
+      margin-bottom: 8px;
       margin-left: 6%;
+      font-size: 150px;
     }
     .hey {
       display: block;
@@ -290,9 +314,11 @@ footer {
       margin-left: 7%;
       padding-left: 0;
       width: auto;
-      ul li {
-        margin: 0;
-      }
+    }
+    ul li {
+      margin: 0;
+      font-size: 20px;
+      line-height: 36px;
     }
 
   }
@@ -303,7 +329,16 @@ footer {
       padding: 5%;
       text-align: center;
       opacity: 1;
-      .m-dash, h4 {
+      .text {
+        top: auto;
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+      }
+      h3 {
+        border-bottom: none;
+      }
+      h4 {
         display: none;
       }
     }
@@ -346,9 +381,10 @@ footer {
   }
   h3 {
     font-size: 16px;
+    margin-bottom: 0;
   }
   header {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     h1 {
       font-size: 22px;
     }
@@ -396,6 +432,7 @@ footer {
   }
   .section1 .col4, .section2 .col4, .section4 .col4{
     margin-bottom: 30px;
+    width: 100%;
   }
   .craft-projects li {
     width: 100%;
