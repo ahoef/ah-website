@@ -240,24 +240,40 @@ section {
   }
 }
 
-.section4 {
-  margin-bottom: 0;
-  padding: 45px 0 40px 2%;
-  h1 {
-    max-width: 310px
+// .section4 {
+//   margin-bottom: 0;
+//   padding: 45px 0 40px 2%;
+//   h1 {
+//     max-width: 310px
+//   }
+//   .col8 {
+//     .col4 {
+//       width: 37%;
+//       padding-right:1%;
+//     }
+//   }
+//   .wits img {
+//     max-width: 75%;
+//     margin-left: 3%;
+//   }
+//   .spacer {
+//     height: 44%;
+//   }
+// }
+
+.upcoming-talks {
+  padding: 15px;
+  h4 {
+    font-size: 24px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
   }
-  .col8 {
-    .col4 {
-      width: 37%;
-      padding-right:1%;
-    }
+  ul {
+    list-style: disc;
   }
-  .wits img {
-    max-width: 75%;
-    margin-left: 3%;
-  }
-  .spacer {
-    height: 44%;
+  li {
+    margin-bottom: 15px;
+    line-height: 26px;
   }
 }
 
