@@ -58,29 +58,74 @@ h4 {
   line-height: 1.5em;
 }
 header {
+  text-align: center;
   > * {
     display: inline-block;
+
   }
   .hey {
     font-family: 'Oswald', sans-serif;
-    font-size: 160px;
+    font-size: 240px;
     letter-spacing: 1px;
     line-height: 1;
   }
   .info {
     padding-left: 5px;
-    width: 55%;
+    width: 40%;
     vertical-align: top;
     color: #bf97a6;
       h1 {
         
-        font-size: 30px;
+        font-size: 40px;
         margin: 10px 0;
       }
+      p {
+        color: white;
+        font-size: 22px;
+      }
+      // &.before, &.after {
+      //   content: '';
+      //   position: absolute;
+      //   background-repeat: repeat;
+      //   z-index: -1;
+      // }
+//       &:before {
+// background: linear-gradient(#BCED91 49%, transparent 49%),
+//         linear-gradient(-45deg, white 33%, transparent 33%) 0 50%,
+//         white linear-gradient(45deg, white 33%, #BCED91 33%) 0 50%;
+//     background-repeat: repeat-x;
+//     background-size: 1px 100%, 40px 40px, 40px 40px;
+//     height: 100px;
+//       }
+    // &.after {
+    //   {
+    //   @include background(
+    //     linear-gradient(135deg, $bg, $bg  75%, $zig 75%, $zig),
+    //     linear-gradient(315deg, $bg, $bg  75%, $zig 75%, $zig),
+    //     linear-gradient(225deg, $bg, $bg  75%, $zig 75%, $zig),
+    //     linear-gradient(45deg, $bg, $bg  75%, $zig 75%, $zig)
+    //   );
+    //   background-position: 0.5em 0.5em, 0.5em 0em, 0.5em 0, 0.5em 0.5em;
+    //   background-size: 1em 1em;
+    //   left: -1em;
+    //   top: 0;
+    //   height: 100%;
+    //   width: 27em;
+    // }
+    // }
   }
   nav {
-    border-left: 1px solid white;
-    padding: 10px;
+    display: block;
+    text-align: center;
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 10px;
+      a {
+        color: #bf97a6;
+      }
+    }
+
   }
 
   // text-align: center;
@@ -129,6 +174,45 @@ header {
   //     // }
   //   }
   // }
+}
+
+.thingy{
+  display:block;
+  width: 500px;
+  text-align: center;
+  background: 0 center repeat-x    url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="6px" viewBox="0 0 9 6" enable-background="new 0 0 9 6" xml:space="preserve"><polygon opacity="0.2" points="4.5,4.5 0,0 0,1.208 4.5,5.708 9,1.208 9,0 "/></svg>');
+}
+
+.white {
+    position: absolute;
+    z-index: 2;
+    width: 240px;
+    height:30px;
+    outline:0px solid red;
+    background: linear-gradient(-45deg, transparent 75%, #cedce7 75%),
+                linear-gradient( 45deg, transparent 75%, #cedce7 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size:30px 30px, 30px 30px;
+}
+ 
+.black {
+    position: absolute;
+    z-index: 1;
+    width: 240px;
+    height:30px;
+    margin-top: 5px;
+    border-top: 0px solid #000;
+    background: linear-gradient(-45deg, transparent 75%, #000 75%),
+                linear-gradient( 45deg, transparent 75%, #000 75%) 0 50%;
+    background-repeat: repeat-x;
+    background-size:30px 30px, 30px 30px;
+}
+.border{
+    position: absolute;
+    z-index: 0;
+    width: 240px;
+    height:5px;
+    background-color: #000;
 }
 
 nav {
