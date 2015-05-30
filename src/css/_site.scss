@@ -61,6 +61,7 @@ h4 {
 
 header {
   text-align: center;
+  margin-bottom: 30px;
   > * {
     display: inline-block;
 
@@ -73,7 +74,7 @@ header {
   }
   .info {
     padding-left: 5px;
-    width: 46%;
+    width: 40%;
     vertical-align: top;
     color: #bf97a6;
     position: relative;
@@ -87,38 +88,10 @@ header {
         font-size: 22px;
       }
       .zigzag {
-        opacity: .5;
+        opacity: .3;
+          padding-left: 38px;
+  margin-top: 34px;
       }
-      // &.before, &.after {
-      //   content: '';
-      //   position: absolute;
-      //   background-repeat: repeat;
-      //   z-index: -1;
-      // }
-//       &:before {
-// background: linear-gradient(#BCED91 49%, transparent 49%),
-//         linear-gradient(-45deg, white 33%, transparent 33%) 0 50%,
-//         white linear-gradient(45deg, white 33%, #BCED91 33%) 0 50%;
-//     background-repeat: repeat-x;
-//     background-size: 1px 100%, 40px 40px, 40px 40px;
-//     height: 100px;
-//       }
-    // &.after {
-    //   {
-    //   @include background(
-    //     linear-gradient(135deg, $bg, $bg  75%, $zig 75%, $zig),
-    //     linear-gradient(315deg, $bg, $bg  75%, $zig 75%, $zig),
-    //     linear-gradient(225deg, $bg, $bg  75%, $zig 75%, $zig),
-    //     linear-gradient(45deg, $bg, $bg  75%, $zig 75%, $zig)
-    //   );
-    //   background-position: 0.5em 0.5em, 0.5em 0em, 0.5em 0, 0.5em 0.5em;
-    //   background-size: 1em 1em;
-    //   left: -1em;
-    //   top: 0;
-    //   height: 100%;
-    //   width: 27em;
-    // }
-    // }
   }
 
 
@@ -173,8 +146,8 @@ header {
   nav {
     display: block;
     text-align: center;
-    padding: 17px 0px;
-    margin-top: 50px;
+    padding: 12px 0px;
+    // margin-top: 50px;
     // background-color: white;
     // opacity: .3;
     // .background {
@@ -190,7 +163,7 @@ header {
       display: inline-block;
       list-style: none;
       padding: 5px;
-      margin: 17px;
+      margin: 17px 8px;
         &:hover {
           border-bottom: 1px solid #bf97a6;
           padding-bottom: 4px;
@@ -241,17 +214,6 @@ header {
     width: 240px;
     height:5px;
     background-color: #000;
-}
-
-nav {
-  // margin-top: 42px;
-  // ul {
-  //   li {
-  //     display: inline-block;
-  //     padding-right: 30px;
-  //     font-size: 18px;
-  //   }
-  // }
 }
 
 section {
