@@ -20,7 +20,7 @@ body {
   background: -ms-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* IE10+ */
   background: linear-gradient(to bottom, #cedce7 0%,#bf97a6 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#bf97a6',GradientType=0 ); /* IE6-9 */
-  padding: 100px;
+  padding: 100px 0;
   letter-spacing: .01em;
 }
 
@@ -57,6 +57,8 @@ h3
 h4 {
   line-height: 1.5em;
 }
+
+
 header {
   text-align: center;
   > * {
@@ -71,9 +73,10 @@ header {
   }
   .info {
     padding-left: 5px;
-    width: 40%;
+    width: 46%;
     vertical-align: top;
     color: #bf97a6;
+    position: relative;
       h1 {
         
         font-size: 40px;
@@ -82,6 +85,9 @@ header {
       p {
         color: white;
         font-size: 22px;
+      }
+      .zigzag {
+        opacity: .5;
       }
       // &.before, &.after {
       //   content: '';
@@ -114,19 +120,7 @@ header {
     // }
     // }
   }
-  nav {
-    display: block;
-    text-align: center;
-    li {
-      display: inline-block;
-      list-style: none;
-      padding: 10px;
-      a {
-        color: #bf97a6;
-      }
-    }
 
-  }
 
   // text-align: center;
   // margin-bottom: 15px;
@@ -176,12 +170,46 @@ header {
   // }
 }
 
-.thingy{
-  display:block;
-  width: 500px;
-  text-align: center;
-  background: 0 center repeat-x    url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="6px" viewBox="0 0 9 6" enable-background="new 0 0 9 6" xml:space="preserve"><polygon opacity="0.2" points="4.5,4.5 0,0 0,1.208 4.5,5.708 9,1.208 9,0 "/></svg>');
-}
+  nav {
+    display: block;
+    text-align: center;
+    padding: 17px 0px;
+    margin-top: 50px;
+    // background-color: white;
+    // opacity: .3;
+    // .background {
+    //   background-color: white;
+    //   opacity: .3;
+    //   width: 100%;
+    //   height: 75px;
+    //   z-index: -1;
+    //   position: absolute;
+    // }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 5px;
+      margin: 17px;
+        &:hover {
+          border-bottom: 1px solid #bf97a6;
+          padding-bottom: 4px;
+        }
+                      &.current {
+        border-bottom: 1px solid #bf97a6;
+        padding-bottom: 4px;
+      }
+      a {
+        color: #bf97a6;
+        font-size: 20px;
+
+
+      }
+
+    }
+
+  }
+
 
 .white {
     position: absolute;
