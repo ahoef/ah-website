@@ -20,7 +20,7 @@ body {
   background: -ms-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* IE10+ */
   background: linear-gradient(to bottom, #cedce7 0%,#bf97a6 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#bf97a6',GradientType=0 ); /* IE6-9 */
-  padding: 100px 0;
+  padding: 100px 3%;;
   letter-spacing: .01em;
 }
 
@@ -61,7 +61,7 @@ h4 {
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   > * {
     display: inline-block;
 
@@ -93,72 +93,12 @@ header {
   margin-top: 34px;
       }
   }
-
-
-  // text-align: center;
-  // margin-bottom: 15px;
-  // a {
-  //   &:hover {
-  //     color: #bf97a6;
-  //   }
-  // }
-  // h1 {
-  //   margin-top: 10px;
-  //   line-height: 1em;
-  //   margin-bottom: 0;
-  // }
-  // h2 {
-  //   font-size: 180px;
-  //   line-height: 1;
-  // }
-  // .hey {
-  //   display: inline-block;
-  // }
-  // .meta {
-  //   text-align: left;
-  //   display: inline-block;
-  //   padding-left:3%;
-  //   vertical-align: top;
-  // }
-  // ul {
-  //   li {
-  //     font-size: 24px;
-  //     line-height: 45px;
-  //     // &:nth-child(1) a{
-  //     //   color: lighten(#bf97a6, 27);
-  //     // }
-  //     // &:nth-child(2) a{
-  //     //   color: lighten(#bf97a6, 25);
-  //     // }
-  //     // &:nth-child(3) a{
-  //     //   color: lighten(#bf97a6, 22);
-  //     // }
-  //     // &:nth-child(3) a{
-  //     //   color: lighten(#bf97a6, 21);
-  //     // }
-  //     // &:nth-child(4) a{
-  //     //   color: lighten(#bf97a6, 20);
-  //     // }
-  //   }
-  // }
 }
 
   nav {
     display: block;
     text-align: center;
     padding: 12px 0px;
-    // margin-top: 50px;
-    // background-color: white;
-    // opacity: .3;
-    // .background {
-    //   background-color: white;
-    //   opacity: .3;
-    //   width: 100%;
-    //   height: 75px;
-    //   z-index: -1;
-    //   position: absolute;
-    // }
-
     li {
       display: inline-block;
       list-style: none;
@@ -181,44 +121,9 @@ header {
 
     }
 
-  }
-
-
-.white {
-    position: absolute;
-    z-index: 2;
-    width: 240px;
-    height:30px;
-    outline:0px solid red;
-    background: linear-gradient(-45deg, transparent 75%, #cedce7 75%),
-                linear-gradient( 45deg, transparent 75%, #cedce7 75%) 0 50%;
-    background-repeat: repeat-x;
-    background-size:30px 30px, 30px 30px;
-}
- 
-.black {
-    position: absolute;
-    z-index: 1;
-    width: 240px;
-    height:30px;
-    margin-top: 5px;
-    border-top: 0px solid #000;
-    background: linear-gradient(-45deg, transparent 75%, #000 75%),
-                linear-gradient( 45deg, transparent 75%, #000 75%) 0 50%;
-    background-repeat: repeat-x;
-    background-size:30px 30px, 30px 30px;
-}
-.border{
-    position: absolute;
-    z-index: 0;
-    width: 240px;
-    height:5px;
-    background-color: #000;
-}
+  } 
 
 section {
-  padding: 50px 50px;
-  margin-bottom: 30px;
   .amp {
     font-size: 200px;
     position: absolute;
@@ -279,12 +184,10 @@ section {
   }
 }
 
-.section1 {
-  padding-right: 3%;
-  padding-left: 3%;
-  margin-right: 0;
-  .spacer {
-    height: 56%;
+section.about {
+  // text-align: center;
+  .about-pic {
+    max-width: 575px;
   }
 }
 
@@ -296,45 +199,6 @@ section {
       height: 52%;
   }
 }
-
-.craft-projects {
-  padding-left: 3%;
-  padding-right: 4%;
-  padding-top: 100px;
-  ul {
-      margin-left: 1%;
-  }
-  li {
-    width: 19.2%;
-    float: left;
-    margin-right: 1%;
-    margin-bottom: 40px;
-    &:nth-child(5n) {
-      margin-right: 0;
-    }
-  }
-}
-
-// .section4 {
-//   margin-bottom: 0;
-//   padding: 45px 0 40px 2%;
-//   h1 {
-//     max-width: 310px
-//   }
-//   .col8 {
-//     .col4 {
-//       width: 37%;
-//       padding-right:1%;
-//     }
-//   }
-//   .wits img {
-//     max-width: 75%;
-//     margin-left: 3%;
-//   }
-//   .spacer {
-//     height: 44%;
-//   }
-// }
 
 .upcoming-talks {
   padding: 15px;
