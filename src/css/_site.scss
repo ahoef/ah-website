@@ -79,7 +79,6 @@ header {
     color: #bf97a6;
     position: relative;
       .zigzag {
-        opacity: .3;
         padding-left: 38px;
         margin-top: 34px;
       }
@@ -169,6 +168,10 @@ section {
   }
 }
 
+.zigzag {
+    opacity: .3;
+}
+
 .hackathon-projects {
   margin-top: 60px;
   .heading {
@@ -178,10 +181,6 @@ section {
         font-size: 26px;
         margin-bottom: 14px;
     }
-    .zigzag {
-        opacity: .3;
-    }
-
   }
 }
 
@@ -217,7 +216,7 @@ footer {
     margin: 0 auto;
     li {
       display: inline-block;
-      margin: 30px 20px;
+      margin: 30px 16px;
       i {
         font-size: 40px;
       }
