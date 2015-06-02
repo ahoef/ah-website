@@ -37,8 +37,13 @@ p {
 
 h1 {
   color: #bf97a6;
-  font-size: 2.5em;
-  margin: 20px 0;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+h2 {
+  color: white;
+  font-size: 22px;
 }
 
 h3
@@ -73,14 +78,6 @@ header {
     vertical-align: top;
     color: #bf97a6;
     position: relative;
-      h1 {
-        font-size: 40px;
-        margin: 10px 0;
-      }
-      h2 {
-        color: white;
-        font-size: 22px;
-      }
       .zigzag {
         opacity: .3;
         padding-left: 38px;
@@ -124,12 +121,6 @@ section {
     top: -84px;
     left: -141px;
     opacity: .3;
-  }
-  h2 {
-    font-size: 22px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: white;
   }
   .section-head {
     position: relative;
@@ -178,6 +169,22 @@ section {
   }
 }
 
+.hackathon-projects {
+  margin-top: 60px;
+  .heading {
+    margin-left: 2%;
+    margin-bottom: 30px;
+    h2 {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+    .zigzag {
+        opacity: .3;
+    }
+
+  }
+}
+
 section.about {
   // text-align: center;
   .about-pic {
@@ -205,12 +212,12 @@ footer {
   padding-top:70px;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   ul {
     margin: 0 auto;
     li {
       display: inline-block;
-      margin: 30px 15px;
+      margin: 30px 20px;
       i {
         font-size: 40px;
       }
@@ -223,42 +230,8 @@ footer {
     h2 {
       padding-left: 0;
     }
-    .meta {
-      padding-right: 0;
-    }
   }
 }
-// @media (max-width: 1220px) {
-//   header {
-//     .meta {
-//       width: 100%;
-//       text-align: left;
-//     }
-//     ul li {
-//       &:nth-child(1) {
-//         margin-left: 7%;
-//       }
-//       &:nth-child(2) {
-//         margin-left: 21%;
-//       }
-//       &:nth-child(3) {
-//         margin-left: 39%;
-//       }
-//       &:nth-child(4) {
-//         margin-left: 48%;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 1165px) {
-//   .section2 .spacer {
-//     height: 46%;
-//   }
-//   .section4 .spacer {
-//     height: 35%;
-//   }
-// }
 
 @media (max-width: 1120px) {
   body {
@@ -277,16 +250,6 @@ footer {
     }
     .hey {
       display: block;
-    }
-    .col5 {
-      float: none;
-    }
-    .meta {
-      text-align: left;
-      margin-bottom: 40px;
-      margin-left: 7%;
-      padding-left: 0;
-      width: auto;
     }
     ul li {
       margin: 0;
@@ -313,31 +276,6 @@ footer {
       }
       h4 {
         display: none;
-      }
-    }
-  }
-  .section1, .section2, .craft-projects, .section4 {
-    padding-right: 0;
-    padding-left: 6%;
-    padding-top: 18px;
-  }
-  .craft-projects {
-    margin-bottom: 0;
-  }
-  .section4 {
-    .col8 {
-      float: none;
-    }
-    .col8 .col4 {
-      width: 31%;
-    }
-    .wits {
-      display: block;
-      width: 100%;
-      margin-top: 70px;
-      img {
-        width: 31%;
-        margin-left: 1%;
       }
     }
   }
@@ -373,7 +311,7 @@ footer {
         display: none;
       }
     }
-    meta, h2 {
+    h2 {
       margin-left: 5%;
     }
   }
@@ -403,45 +341,7 @@ footer {
   .block {
     text-align: center;
   }
-  .section1 .col4, .section2 .col4, .section4 .col4{
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .craft-projects li {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    float: none;
 
-  }
-  .craft-projects li:nth-child(5n) {
-    margin-right: auto;
-  }
-  .section4 {
-    margin-top: 50px;
-  }
-  .section4 .col4 {
-    width: 80%;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .section4 .wits {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-  .section4 .wits img {
-    width: 100%;
-  }
-  .wits .section-head {
-    text-align: left;
-  }
-  footer h3 {
-    font-size: 18px;
-  }
   footer ul {
     text-align: center;
     font-size: 10px;
