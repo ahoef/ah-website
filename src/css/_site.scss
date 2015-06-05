@@ -20,7 +20,7 @@ body {
   background: -ms-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* IE10+ */
   background: linear-gradient(to bottom, #cedce7 0%,#bf97a6 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#bf97a6',GradientType=0 ); /* IE6-9 */
-  padding: 100px 3%;;
+  padding: 100px 3%;
   letter-spacing: .01em;
 }
 
@@ -77,14 +77,16 @@ header {
   }
   .info {
     padding-left: 25px;
-    // width: 40%;
     vertical-align: top;
     color: #bf97a6;
     position: relative;
-      .zigzag {
-        // padding-left: 38px;
-        margin-top: 34px;
-      }
+    // h2 {
+    //   font-weight: 300;
+    // }
+    .zigzag {
+      // padding-left: 38px;
+      margin-top: 34px;
+    }
   }
 }
 
@@ -97,6 +99,7 @@ nav {
     list-style: none;
     padding: 5px;
     margin: 17px 8px;
+    // font-weight: 300;
       &:hover {
         border-bottom: 1px solid #bf97a6;
         padding-bottom: 4px;
@@ -177,7 +180,7 @@ section {
   p {
     margin-bottom: 30px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6em;
   }
   a {

@@ -14,29 +14,21 @@ gulp.task('connect', function() {
 });
 
 gulp.task('sass', function () {
-	gulp.src('src/css/styles.scss')
-	.pipe(sass())
-	.pipe(minifycss())
-	.pipe(concat("base.min.css"))
-	.pipe(gulp.dest('dest/css'))
-	.pipe(notify({
-      	message: "Sass compiled!"
-    }));
-});
-
-gulp.task('blogSass', function () {
-  gulp.src('src/css/blog-header-footer.scss')
+  gulp.src('src/css/styles.scss')
   .pipe(sass())
   .pipe(minifycss())
-  .pipe(concat("blog-header-footer.min.css"))
+  .pipe(concat("base.min.css"))
   .pipe(gulp.dest('dest/css'))
+  .pipe(notify({
+        message: "Sass compiled!"
+    }));
 });
 
 gulp.task('js', function() {
   gulp.src('src/js/*.js')
-  	.pipe(uglify())
-  	.pipe(concat("site.min.js"))
-  	.pipe(gulp.dest('dest/js'))
+    .pipe(uglify())
+    .pipe(concat("site.min.js"))
+    .pipe(gulp.dest('dest/js'))
     .pipe(notify({
         message: "JavaScript compiled!"
     }));
@@ -44,16 +36,13 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
-  	gulp.watch('src/css/styles.scss', function() {
-    	gulp.run('sass');
-  	});
-    gulp.watch('src/css/blog-header-footer.scss', function() {
-      gulp.run('blogSass');
+    gulp.watch('src/css/*.scss', function() {
+      gulp.run('sass');
     });
 
-  	gulp.watch('src/js/*.js', function() {
-	    gulp.run('js');
-	  });
+    gulp.watch('src/js/*.js', function() {
+      gulp.run('js');
+    });
 });
 
-gulp.task('default', ['connect', 'sass', 'blogSass', 'js', 'watch']);
+gulp.task('default', ['connect', 'sass', 'js', 'watch']);
