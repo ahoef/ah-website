@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
   gulp.src('src/js/*.js')
   	.pipe(uglify())
-  	.pipe(concat("app.min.js"))
+  	.pipe(concat("site.min.js"))
   	.pipe(gulp.dest('dest/js'))
     .pipe(notify({
         message: "JavaScript compiled!"

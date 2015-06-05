@@ -90,7 +90,7 @@ body {
 /* General small screen Mobile
   ============================================================================================== */
 
-@media handheld, only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   body {
     font-size: 1.0em;
     -webkit-text-size-adjust: none;
@@ -116,7 +116,7 @@ body {
   .col10,
   .col11,
   .col12 {
-    width: 98%;
+    width: 98% !important;
   }
 }
 /* Clear Helpers
