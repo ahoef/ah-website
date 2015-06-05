@@ -101,7 +101,7 @@ nav {
         border-bottom: 1px solid #bf97a6;
         padding-bottom: 4px;
       }
-                    &.current {
+      &.current {
       border-bottom: 1px solid #bf97a6;
       padding-bottom: 4px;
     }
@@ -114,18 +114,6 @@ nav {
 } 
 
 section {
-  .amp {
-    font-size: 200px;
-    position: absolute;
-    top: -84px;
-    left: -141px;
-    opacity: .3;
-  }
-  .section-head {
-    position: relative;
-    margin-left: 1%;
-    margin-bottom: 25px;
-  }
   .overlay {
     position: absolute;
     background-color: black;
@@ -238,7 +226,6 @@ footer {
 }
 
 @media (max-width: 1120px) {
-
   section {
     .overlay {
       position: relative;
@@ -275,8 +262,6 @@ footer {
   }
   footer {
     padding-top: 40px;
-    // text-align: left;
-    // padding-left: 8%;
   }
 
 }
@@ -290,59 +275,67 @@ footer {
     margin-bottom: 0;
   }
   header {
-    margin-bottom: 36px;
+    margin-bottom: 20px;
+    .hey {
+      font-size: 170px;
+    }
+    .zigzag {
+      width: 270px;
+    }
     h1 {
-      font-size: 22px;
+      font-size: 25px;
     }
     h2 {
-      font-size: 100px;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      font-size: 18px;
     }
-    ul li {
-      font-size: 16px;
-      line-height: 25px;
-      &:first-child span {
-        display: none;
+    .info {
+      padding-left: 0;
+    }
+  }
+  nav {
+    padding-top: 20px;
+    li {
+      margin: 5px;
+      padding: 0;
+      a {
+        font-size: 14px;
+          &:hover, &.current {
+            padding-bottom: 1px;
+        }
       }
     }
-    h2 {
-      margin-left: 5%;
+  }
+  .overlay {
+    p {
+      display: none;
     }
   }
-  .section1, .section2, .craft-projects, .section4 {
-    padding-left: 2%;
-    padding-bottom: 0;
+  .web-projects, .hackathon-projects {
+    article {
+      margin-bottom: 35px;
+    }
   }
-  section h1 {
-    font-size: 15px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: white;
-    margin-left: 29px;
-    max-width: 212px;
+  .hackathon-projects {
+    margin-top: 40px;
+    article:last-child {
+      margin-bottom: 0;
+    }
   }
-
-  // section .amp {
-  //   font-size: 150px;
-  //   position: absolute;
-  //   top: -88px;
-  //   left: -70px;
-  // }
-
-  // section .section-head {
-  //   margin-left: 14%;
-  // }
-  .block {
-    text-align: center;
+  .about {
+    .about-pic {
+      margin-bottom: 30px;
+    }
+    article {
+      padding: 0;
+      p {
+        font-size: 14px;
+      }
+    }
   }
-
-  footer ul {
-    text-align: center;
-    font-size: 10px;
-    margin-bottom: 20px;
-    li {
-      margin-right: 10px;
+  footer {
+    padding-bottom: 25px;
+    .zigzag {
+      width: 270px;
     }
   }
 }
