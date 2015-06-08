@@ -1,0 +1,366 @@
+@import url('reset.css');
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body
+{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: #cedce7; /* Old browsers */
+  background: -moz-linear-gradient(top, #cedce7 0%, #bf97a6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#bf97a6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cedce7 0%,#bf97a6 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #cedce7 0%,#bf97a6 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#bf97a6',GradientType=0 ); /* IE6-9 */
+  padding: 100px;
+}
+
+a
+{
+  text-decoration: none;
+  color: #bf97a6;
+}
+
+a:hover
+{
+  color: #DEC1CC;
+}
+
+p
+{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4em;
+}
+
+h1
+{
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 2.5em;
+  margin: 50px 0;
+}
+
+h2
+{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+h3
+{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+}
+
+section
+{
+  padding: 50px 50px;
+  border-bottom: 2px dashed #888;
+}
+
+section:last-child
+{
+  border-bottom: none;
+}
+
+.inner
+{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main-content
+{
+  background-color: rgba(255, 255, 255, .5);
+}
+
+header h2 {
+  font-size: 200px;
+}
+
+nav ul
+{
+  border-bottom: 2px dashed #888;
+  font-size: 1.2em;
+  font-family: 'Rosario', sans-serif;
+  font-style: italic;
+}
+
+nav ul li
+{
+  display: inline-block;
+  float: left;
+}
+
+nav ul li a
+{
+  margin: 0;
+  padding: 35px 15px 25px 15px;
+  display: block;
+}
+
+nav ul #github
+{
+  padding-left: 30px;
+}
+
+.bio p
+{
+  float: left;
+  width: 65%;
+  margin-right: 6%;
+  margin-bottom: 12px
+}
+
+.bio .last
+{
+  margin-bottom: 0;
+}
+
+.bio img
+{
+  width: 27%;
+  border: 8px solid white;
+}
+
+.projects .column
+{
+  width: 28.65%;
+  float: left;
+  margin-right: 7%;
+}
+
+.projects .column .project-info
+{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.projects .column h3
+{
+  text-align: center;
+/*  background-color: #DBDBDB;
+  color: #888;*/
+  background-color: #ABA9A9;
+  color: #fff;
+  padding: 20px 5px 16px 5px;
+  margin-top: -2px;
+  margin-bottom: 0px;
+}
+
+.projects .column .urban
+{
+  padding: 30px 5px 26px 5px;
+}
+
+.projects .column .project-info p
+{
+  color: #888;
+}
+
+.projects .column:last-child
+{
+  margin-right: 0%;
+}
+
+.projects img
+{
+  /*float: left;*/
+  border: 8px solid white;
+  width: 93%;
+  /*margin-bottom: 20px;*/
+}
+
+.projects img:hover
+{
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+.craft-projects li
+{
+
+  width: 15.75%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.craft-projects img
+{
+  width: 93%;
+   border: 8px solid white;
+}
+
+.craft-projects li:nth-child(5n)
+{
+  margin-right: 0;
+}
+
+.craft-projects p a:hover
+{
+  color: #fff;
+}
+
+footer
+{
+  margin: 40px 0;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer a
+{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+
+footer a:hover
+{
+  color: #888;
+}
+
+.upcoming-talks {
+  padding: 15px;
+}
+.upcoming-talks h4 {
+    font-size: 24px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+  }
+.upcoming-talks ul {
+    list-style: disc;
+  }
+.upcoming-talks li {
+    margin-bottom: 15px;
+    line-height: 26px;
+  }
+
+
+
+
+
+@media (max-width: 960px) {
+  h1 {margin: 50px 40px;}
+}
+
+@media (max-width: 900px) {
+  .bio p
+  {
+    width: 64%;
+  }
+}
+
+@media (max-width: 750px) {
+  .projects img
+  {
+  border: 6px solid white;
+  }
+
+@media (max-width: 635px) {
+  .bio p
+  {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bio img
+  {
+    width: 55%;
+    margin-left: 20%;
+  }
+  .bio .last
+  {
+    margin-bottom: 12px;
+  }
+
+  .projects .column
+  {
+    width: 55%;
+    margin-right: 0%;
+    margin-left: 20%;
+  }
+
+  .projects img
+  {
+    border: 8px solid white;
+    width: 94%;
+  }
+
+  .projects .column .project-info
+  {
+    margin-bottom: 30px;
+  }
+
+  .craft-projects li
+  {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .craft-projects img
+  {
+    width: 93%;
+    border: 5px solid white;
+  }
+
+  .craft-projects li:nth-child(5n)
+  {
+    margin-right: 5%;
+  }
+
+  .craft-projects li:nth-child(3n)
+  {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {font-size: 2em;}
+  nav ul li a
+  {
+    margin: 0;
+    padding: 20px 10px 15px 10px;
+    display: block;
+  }
+  section {padding: 50px 30px;}
+  .bio img
+  {
+    width: 94%;
+    margin-left: 0%;
+  }
+  h2
+  {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .projects .column
+  {
+    width: 100%;
+    margin-left: 0;
+  }
+  .projects .column img
+  {
+    width: 94.5%;
+  }
+}
+
