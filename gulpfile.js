@@ -1,6 +1,6 @@
-var   gulp = require('gulp');
-      gutil = require('gulp-util');
-      sass = require('gulp-ruby-sass');
+var   gulp = require('gulp'),
+      gutil = require('gulp-util'),
+      sass = require('gulp-ruby-sass'),
       uglify = require('gulp-uglify'),
       minifycss = require('gulp-minify-css'),
       watch = require('gulp-watch'),
